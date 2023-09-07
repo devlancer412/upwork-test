@@ -1,8 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useGetProducts } from "./hooks";
 
 function App() {
+  const  products = useGetProducts();
+
+  console.log(products);
+  
   return (
     <div className="App">
       <header className="App-header">
